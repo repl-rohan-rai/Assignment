@@ -1,0 +1,33 @@
+n=int(input())
+c=0
+while(n>=500):
+   c+=1
+   n-=500
+if c>0:
+    print(500," * ",c)
+c=0
+while(n>=100):
+   c+=1
+   n-=100
+if c>0:
+    print(100," * ",c)
+c=0
+while(n>=50):
+   c+=1
+   n-=50
+if c>0:
+    print(50," * ",c)
+c=0
+while(n>=10):
+   c+=1
+   n-=10
+if c>0:
+    print(10," * ",c)
+c=0
+while(n>=5):
+   c+=1
+   n-=5
+if c>0:
+    print(5," * ",c)
+if n!=0:
+    print("Please enter the amount in multiple of 5")

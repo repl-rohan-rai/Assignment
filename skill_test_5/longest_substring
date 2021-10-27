@@ -1,0 +1,21 @@
+n=input()
+l=len(n)
+s=0
+a=0
+b=0
+p=0
+for i in range(0,l-1):
+   for j in range(i+1,l):
+       c=n[int(i):int(j)+1]
+       if len(c)%2==0:
+           for k in c[0:int(len(c)/2)]:
+               a+=int(k)
+           for k in c[int(len(c)/2):]:
+               b+=int(k)
+           if a==b:
+               if s<a:
+                   s=a
+                   p=len(c)
+       a=0
+       b=0
+print(p)
