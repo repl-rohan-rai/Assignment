@@ -1,4 +1,6 @@
 def fact(number):
+    if number.isdigit()!=true:
+        return "Enter an integer value"
     if number==0:
         return 1
     elif number==1:
