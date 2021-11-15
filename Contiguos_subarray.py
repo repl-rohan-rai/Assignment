@@ -1,4 +1,6 @@
 def Contiguos_subarray(initial_array,size):
+    if all(isinstance(x, int) for x in initial_array)!=True:
+        return "Elements in the array only need to be integer values"
     if size==0:
         return "List cannot be empty"
     else:
