@@ -2,6 +2,8 @@ def jumps(initial_array,length):
     x=0
     y=0
     jump=0
+    if all(isinstance(x, int) for x in initial_array)!=True:
+        return "Elements in the array only need to be integer values"
     if length==0:
         return "List cannot be empty"
     else:
